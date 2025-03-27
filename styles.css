@@ -1,0 +1,57 @@
+/* Cool Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.highlight {
+    color: #00ffcc;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.project-card {
+    display: inline-block;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
