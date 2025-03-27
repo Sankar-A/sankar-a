@@ -1,47 +1,44 @@
-/* Cool Styling */
+/* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #0d0d0d;
-    color: white;
-    text-align: center;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    padding: 50px;
-    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    opacity: 0.8;
-}
-
-.highlight {
-    color: #00ffcc;
+    font-size: 1.2rem;
+    color: #555;
 }
 
 section {
-    margin: 40px 0;
     padding: 20px;
+    margin: 10px;
 }
 
 .project-card {
-    display: inline-block;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 0.9rem;
 }
 
 /* Animations */
@@ -53,5 +50,38 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }
