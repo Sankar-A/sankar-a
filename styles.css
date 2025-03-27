@@ -1,28 +1,29 @@
-/* General styles */
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0d0d0d;
-    color: white;
-    text-align: center;
+    background: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
     text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
+    background: #1e1e1e;
+    color: #00ffcc;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #b0b0b0;
     opacity: 0.8;
 }
 
@@ -32,28 +33,44 @@ h1 {
 
 section {
     padding: 20px;
-    margin: 40px 0;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
 }
 
 .project-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #1a1a1a;
+    background: #2a2a2a;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
-    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Prevent overflow due to padding */
 }
 
 .project-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f4f4f4;
+    background: #1e1e1e;
+    color: #b0b0b0;
     font-size: 0.9rem;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Animations */
@@ -68,14 +85,14 @@ footer {
     }
 }
 
-/* Responsive styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
     }
 
     .subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     section {
@@ -83,6 +100,7 @@ footer {
     }
 
     .project-card {
+        padding: 10px;
         display: block;
         margin: 15px auto;
         width: 90%;
@@ -95,7 +113,7 @@ footer {
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     header {
