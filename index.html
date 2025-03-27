@@ -3,48 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Developer Portfolio</title>
+    <title>Sankar A - Backend Developer Portfolio</title>
+    <!-- Include GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1 id="title">👋 Hi, I'm <span class="highlight">Your Name</span></h1>
-        <p class="subtitle">Backend Developer | Problem Solver | Tech Enthusiast</p>
+        <h1 id="title" class="fade-in">Hi, I'm <span class="highlight">Sankar A</span></h1>
+        <p class="subtitle slide-in">Senior Software Engineer | Backend Specialist | Distributed Systems Expert</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a backend software developer with a passion for building scalable, secure, and efficient systems. 
-            I specialize in server-side development, database management, and API design.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, JavaScript</li>
-            <li>Frameworks: Django, Flask, Node.js</li>
-            <li>Databases: PostgreSQL, MongoDB, MySQL</li>
-            <li>Tools: Docker, Kubernetes, Git</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1: API Management System</h3>
-            <p>Designed and implemented a RESTful API system for managing user data with authentication and role-based access control.</p>
+    <main>
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="about">About Me</button>
+            <button class="tab-button" data-tab="skills">Skills</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
         </div>
-        <div class="project-card">
-            <h3>Project 2: E-commerce Backend</h3>
-            <p>Developed a scalable backend for an e-commerce platform, including inventory management and payment gateway integration.</p>
+
+        <!-- Tab Content -->
+        <div class="tab-content active" id="about">
+            <div class="about-container">
+                <div class="typewriter">
+                    I am a Senior Software Engineer with 9 years of experience in backend development and distributed systems.
+                </div>
+                <div class="typewriter">
+                    I specialize in Spring Boot, Spark, and Big Data technologies.
+                </div>
+                <div class="typewriter">
+                    I am passionate about software design, architecture, and building scalable, efficient systems.
+                </div>
+                <div class="typewriter">
+                    I enjoy solving complex problems and mentoring teams to achieve their goals.
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="tab-content" id="skills">
+            <div class="mind-cloud">
+                <span class="keyword large">Java</span>
+                <span class="keyword medium">Spring Boot</span>
+                <span class="keyword large">Spark</span>
+                <span class="keyword medium">Cassandra</span>
+                <span class="keyword small">Big Data</span>
+                <span class="keyword medium">Distributed Computing</span>
+                <span class="keyword small">Horizontal Scalability</span>
+                <span class="keyword large">AWS</span>
+                <span class="keyword medium">Athena</span>
+                <span class="keyword small">Glue</span>
+                <span class="keyword small">Airflow</span>
+                <span class="keyword medium">Google Analytics</span>
+                <span class="keyword small">BigQuery</span>
+                <span class="keyword small">Redshift</span>
+                <span class="keyword medium">Terraform</span>
+                <span class="keyword medium">Agile</span>
+                <span class="keyword small">Team Management</span>
+            </div>
+        </div>
+
+        <div class="tab-content" id="projects">
+            <div class="projects-container">
+                <!-- Appian Projects -->
+                <div class="projects-category">
+                    <h3>Appian Projects</h3>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <h4>Semantic Search with AWS Bedrock</h4>
+                            <p>Implemented a semantic search system using AWS Bedrock (Titan and ChatGPT) to search a dataset of ~1M records. Migrated the codebase to Docker and Kubernetes, automated AWS infrastructure setup with Terraform, and optimized database queries for sub-1-second response times.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Risk Analysis Dashboard</h4>
+                            <p>Streamlined the generation of a risk analysis dashboard for partner loans using PySpark. Reduced infrastructure costs and execution time by building a model feature generation framework for training and testing.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Data Warehouse Development</h4>
+                            <p>Built and improved a data warehouse using AWS Athena, Glue, and Airflow. Designed scalable pipelines for efficient data processing and reporting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kaleidofin Projects -->
+                <div class="projects-category">
+                    <h3>Kaleidofin Projects</h3>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <h4>Microservices Architecture</h4>
+                            <p>Redesigned a monolithic server architecture into microservices. Developed an Aadhaar vault for secure data storage, a notification microservice for WhatsApp and push notifications, and an authentication/authorization microservice.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Data Sync Service</h4>
+                            <p>Created a high-performance data sync service using Cassandra DB to sync thousands of records within seconds. Improved server stability by reducing crashes from 2-3 times a day to zero between releases.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Distributed Order Creation</h4>
+                            <p>Developed a distributed order creation system using Apache Ignite for BlackRock. Designed scalable frameworks for data aggregation and pivot views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>© 2025 Your Name | <a href="https://github.com/YourGitHubUsername">GitHub</a> | <a href="mailto:your.email@example.com">Email</a></p>
+        <p>© 2025 Sankar A | <a href="https://github.com/SankarGitHub">GitHub</a> | <a href="mailto:sankar0594@gmail.com">Email</a></p>
     </footer>
 </body>
 </html>
